@@ -1,0 +1,23 @@
+int dcA1Pin = 8;
+ 
+void setup() {
+  Serial.begin(9600);   //시리얼모니터 
+  
+  pinMode(dcA1Pin,OUTPUT); 
+  
+ 
+}
+ 
+void loop() {
+ 
+ delay(5);
+ motors_forward()
+   
+}
+
+
+void motors_forward(){
+  Serial.print("Forward!!!!");
+  digitalWrite(dcA1Pin,HIGH); 
+  delay(500);
+}
